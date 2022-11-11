@@ -19,8 +19,9 @@ code {
 
 :root {
     --primary-color: rgb(255, 255, 255);
-    --secondary-color: rgb(241, 240, 251);
-    --assent-color: rgb(96, 170, 69);
+    --secondary-color: rgb(243, 242, 251);
+    --secondary-fade-color: rgb(233, 232, 246);
+    --assent-color: #5049E1;
     --text-color: #363636;
     --text-fade-color: #6F6F6F;
     --input-border-color: #888686;
