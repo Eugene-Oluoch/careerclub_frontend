@@ -1,0 +1,23 @@
+.four {
+    background-color: var(--secondary-color);
+}
+
+.four-container {
+    height: calc(100vh - 70px);
+    width: 95%;
+    margin-inline: auto;
+    max-width: 1200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.four-container div img {
+    height: 15rem;
+}
+
+.four-container div h1 {
+    padding-top: 2rem;
+    font-size: 1.5rem;
+    font-weight: 600;
+}

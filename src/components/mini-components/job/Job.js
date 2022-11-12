@@ -30,10 +30,6 @@ function Job() {
             <h1>E-Commerce Web Designer</h1>
         </div>
         <div className="job-tags">
-            <div className="job-tags-company">
-                <RiSuitcaseLine />
-                <p>Rival Gaming</p>
-            </div>
             <div className="job-tags-location">
                 <GrLocation />
                 <p>Nairobi</p>
@@ -41,10 +37,6 @@ function Job() {
             <div className="job-tags-type">
                 <BsClock />
                 <p>Freelance</p>
-            </div>
-            <div className="job-tags-cont">
-                <BsClock />
-                <p>Temporary</p>
             </div>
         </div>
         <div className="job-buttons">
