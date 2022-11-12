@@ -14,6 +14,9 @@ import Jobs from './components/jobs/Jobs';
 import Fof from './components/four-ow-four/Fof';
 import PostJob from './components/post-a-job/PostJob'
 import Companies from './components/companies/Companies';
+import Profile from './components/profile/Profile';
+import Settings from './components/settings/Settings';
+
 //Modules
 import { Routes,Route } from 'react-router-dom';
 
@@ -34,6 +37,8 @@ function App() {
       <Route path="*" element={<Fof />} />
       <Route path="/" element={<Jobs />} />
       <Route path="/jobs" element={<Jobs />} />
+      <Route path="/profile" element={<Profile />} />
+      <Route path="/settings" element={<Settings />} />
       <Route path="/companies" element={<Companies />} />
       <Route path="/post-a-job" element={<PostJob />} />
     </Routes>
