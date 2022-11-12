@@ -1,7 +1,7 @@
 .job {
-    outline: 1px solid red;
     padding: 1rem;
     border-radius: .3rem;
+    background-color: white;
 }
 
 .job-industry h2 {
@@ -68,6 +68,7 @@
 }
 
 .job-posted p {
+    padding-top: 1rem;
     color: var(--text-fade-color);
     font-size: .8rem;
 }
