@@ -1,0 +1,23 @@
+.footer {
+    background-color: var(--assent-color);
+    color: white;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    left: 0;
+}
+
+.footer-container h1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-container svg {
+    margin-left: .5rem;
+    margin-top: .2rem;
+}
