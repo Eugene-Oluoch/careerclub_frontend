@@ -1,0 +1,154 @@
+.profile {
+    padding-block: 2rem;
+    background-color: var(--secondary-color);
+}
+
+.profile-container {
+    width: 95%;
+    margin-inline: auto;
+    max-width: 1200px;
+}
+
+.profile-main {
+    background-color: white;
+    border-radius: .5rem;
+}
+
+.profile-main-image img {
+    height: 5rem;
+    width: 5rem;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid var(--assent-color);
+}
+
+.profile-main-details h1 {
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+}
+
+.profile-main-details-tags div {
+    display: flex;
+    align-items: center;
+    margin-bottom: .5rem;
+}
+
+.profile-main-details-tags div p {
+    padding-left: .5rem;
+}
+
+.profile-edit {
+    padding: 1rem;
+}
+
+.profile-edit button {
+    min-width: 100px;
+    width: 100%;
+    height: 64px;
+    background-color: var(--secondary-fade-color);
+    border: 1px solid var(--secondary-fade-color);
+    border-radius: .3rem;
+    color: var(--assent-color);
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.profile-bio,
+.profile-work,
+.profile-education,
+.profile-skill {
+    margin-block: 1rem;
+    background-color: white;
+    border-radius: .5rem;
+}
+
+.profile-bio-title,
+.profile-work-title,
+.profile-education-title,
+.profile-skill-title {
+    padding: 1rem;
+    border-bottom: 2px solid var(--input-border-color);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.profile-bio-title div,
+.profile-work-title div,
+.profile-education-title div,
+.profile-skill-title div {
+    display: flex;
+    align-items: center;
+}
+
+.profile-bio-title div aside,
+.profile-work-title div aside,
+.profile-education-title div aside,
+.profile-skill-title div aside {
+    background-color: var(--assent-color);
+    height: 2rem;
+    width: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1rem;
+    border-radius: 50% !important;
+    margin-right: .5rem;
+    color: white
+}
+
+.profile-bio-title button,
+.profile-work-title button,
+.profile-education-title button,
+.profile-skill-title button {
+    height: 50px;
+    min-width: 70px;
+    padding-inline: .3rem;
+    font-size: 1rem;
+    border-radius: .5rem;
+    background-color: var(--secondary-fade-color);
+    border: 1px solid var(--secondary-fade-color);
+    color: var(--assent-color);
+    cursor: pointer;
+    font-weight: 500;
+}
+
+.profile-bio-bio,
+.profile-work-list,
+.profile-education-list,
+.profile-skill-list {
+    padding: 1rem;
+}
+
+@media (max-width:1000px) {
+    .profile-main-image {
+        padding-block: 1rem;
+    }
+    .profile-main-details {
+        padding: 1rem;
+    }
+    .profile-main-image {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .profile-edit {
+        border-top: 2px solid var(--input-border-color);
+    }
+}
+
+@media (min-width:1000px) {
+    .profile-main {
+        padding: 1rem;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .profile-main article {
+        display: flex;
+    }
+    .profile-main-details {
+        padding-left: 1rem;
+    }
+}
