@@ -4,6 +4,9 @@ import { useState } from 'react';
 //Css
 import './css/Navbar.css';
 
+//Router
+import { Link } from 'react-router-dom'
+
 function Navbar({open}) {
 
     //States
@@ -19,7 +22,7 @@ function Navbar({open}) {
         <section className="navbar-container">
             <article className="navbar-links">
                 <div className="navbar-links-company">
-                    <h1>CareerClub</h1>
+                    <Link to="/"><h1>CareerClub</h1></Link>
                     <div className="navbar-links-company-hamburger" onClick={handlePop}>
                         <div>
                             <span className="bar"></span>
@@ -31,8 +34,8 @@ function Navbar({open}) {
             </article>
             <article className={pop?"navbar-user active":"navbar-user"}>
                 <ul className="navbar-links-ul">
-                    <li>Home</li>
-                    <li>Companies</li>
+                    <li><Link to="/jobs">Jobs</Link></li>
+                    <li><Link to="/companies">Companies</Link></li>
                 </ul>
                 <div>
                     <p onClick={open}>Sign In | Register</p>
