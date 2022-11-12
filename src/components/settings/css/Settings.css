@@ -1,0 +1,63 @@
+.settings {
+    background-color: var(--secondary-color);
+}
+
+.settings-container {
+    width: 95%;
+    max-width: 1200px;
+    margin-inline: auto;
+    padding-bottom: 3rem;
+}
+
+.setting-header {
+    height: 100px;
+    display: flex;
+    align-items: center;
+}
+
+.setting-header h1 {
+    font-size: 1.5rem;
+    color: var(--text-color);
+}
+
+.settings-password {
+    background-color: white;
+    padding: 1rem;
+    border-radius: .5rem;
+}
+
+.settings-password h1 {
+    padding-bottom: 1rem;
+}
+
+.settings-password form input {
+    height: 54px;
+    display: block;
+    width: 100%;
+    max-width: 600px;
+    margin-bottom: .5rem;
+    border: 1px solid var(--input-border-color);
+    padding-left: .5rem;
+    border-radius: .5rem;
+    font-size: 1rem;
+    transition: .3s;
+}
+
+.settings-password form input:focus {
+    outline: none;
+    border: 1px solid var(--assent-color);
+    transition: .3s;
+}
+
+.settings-password button {
+    width: 100%;
+    max-width: 250px;
+    height: 50px;
+    color: var(--assent-color);
+    background-color: var(--secondary-fade-color);
+    border: 1px solid var(--secondary-fade-color);
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    border-radius: .5rem;
+}

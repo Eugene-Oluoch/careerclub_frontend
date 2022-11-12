@@ -1,0 +1,130 @@
+.filter-main {
+    background-color: var(--secondary-fade-color);
+}
+
+.filter-container {
+    padding-block: 2rem;
+    width: 95%;
+    max-width: 1200px;
+    margin-inline: auto;
+}
+
+.filter-number p {
+    color: var(--text-color);
+    font-weight: 600;
+}
+
+.filter-form-form-inputs div {
+    background-color: white;
+    display: flex;
+    align-items: center;
+    padding-left: .5rem;
+}
+
+.filter-form-form-inputs div svg {
+    font-size: 1.5rem;
+    color: var(--text-fade-color);
+}
+
+.filter-form-form-inputs input {
+    width: 100%;
+    height: 54px;
+    margin-left: .5rem;
+    border: none;
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+.filter-form-form-inputs input:focus {
+    outline: none;
+}
+
+.filter-form-form button {
+    width: 100%;
+    height: 54px;
+    background-color: var(--assent-color);
+    color: white;
+    border: 1px solid var(--assent-color);
+    font-size: 1rem;
+    font-weight: 500;
+    border-radius: .3rem;
+    cursor: pointer;
+    transition: .3s;
+}
+
+.filer-form-form-button button:hover {
+    background-color: var(--assent-fade-color);
+    border: 1px solid var(--assent-fade-color);
+    transition: .3s;
+}
+
+@media (max-width:768px) {
+    .filter-form-form-inputs div:not(:first-child) {
+        border-top: 1px solid var(--input-border-color);
+    }
+    .filter-number {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+@media (min-width:768px) {
+    .filter-form-form,
+    .filter-form-form-inputs {
+        display: flex;
+        align-items: center;
+    }
+    .filter-form-form-inputs {
+        flex-basis: 90%;
+    }
+    .filter-form-form-inputs div {
+        flex-basis: 50%;
+    }
+    .filter-form-form-inputs div:not(:first-child) {
+        border-left: 1px solid var(--input-border-color);
+    }
+    .filter-form-form {
+        background-color: white !important;
+        border-radius: .3rem;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .filer-form-form-button {
+        margin: .5rem;
+        flex-basis: 7%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .filter-form-form-button button {
+        width: 100%;
+    }
+}
+
+@media (max-width:768px) {
+    .filter-form-form button {
+        margin-top: 1rem;
+    }
+}
+
+@media (max-width:1000px) {
+    .filter-number {
+        margin-bottom: 1.5rem;
+    }
+}
+
+@media (min-width:1000px) {
+    .filter {
+        display: grid;
+        grid-template-columns: 250px 1fr;
+    }
+    .filter-number {
+        flex-basis: 15%;
+        display: flex;
+        align-items: center;
+    }
+    .filter-form {
+        flex-basis: 80%;
+    }
+}
