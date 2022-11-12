@@ -1,0 +1,55 @@
+.company {
+    padding: 1rem;
+    border-radius: .3rem;
+    background-color: white;
+}
+
+.company-main {
+    padding-block: 1rem;
+    display: flex;
+}
+
+.company-main div {
+    padding-top: .5rem;
+    padding-left: 1rem;
+}
+
+.company-main div h1 {
+    font-size: 1rem;
+}
+
+.company-main div a {
+    color: var(--text-fade-color);
+}
+
+.company-main img {
+    width: 4rem;
+    object-fit: cover;
+    height: 4rem;
+}
+
+.company-open button {
+    padding-inline: .5rem;
+    height: 56px;
+    color: var(--assent-color);
+    font-size: 1rem;
+    font-weight: 600;
+    background-color: var(--secondary-fade-color);
+    border: 1px solid var(--secondary-fade-color);
+    border-radius: .3rem;
+    cursor: pointer;
+}
+
+@media (max-width:568px) {
+    .company-open button {
+        width: 100%;
+    }
+}
+
+@media (min-width:568px) {
+    .company {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+}
