@@ -1,0 +1,134 @@
+.navbar {
+    margin-inline: auto;
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+}
+
+.navbar-container {
+    width: 90%;
+    max-width: 1200px;
+    margin-inline: auto;
+    padding-block: .5rem;
+    position: relative;
+}
+
+.navbar-links-company h1 {
+    font-size: 1.5rem;
+    color: var(--assent-color);
+}
+
+.navbar-links-ul li,
+.navbar-user div p {
+    color: var(--text-color);
+    transition: .3s;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+.navbar-links-ul li:hover,
+.navbar-user div p:hover {
+    color: var(--assent-color);
+    transition: .3s;
+}
+
+.navbar-user div button {
+    font-weight: 600;
+    cursor: pointer;
+    font-size: .9rem;
+    font-weight: 600;
+    color: white;
+    background-color: var(--assent-color);
+    border: 1px solid var(--assent-color);
+    padding: 12px 20px;
+    border-radius: .3rem;
+}
+
+
+/* Hamburger */
+
+.navbar-links-company-hamburger {
+    border-radius: .3rem;
+    background-color: var(--assent-color);
+    height: 2rem;
+    width: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.bar {
+    display: block;
+    background-color: white;
+    width: 20px;
+    height: 3px;
+    border-radius: .2rem;
+}
+
+.bar:not(:last-child) {
+    margin-bottom: .25rem;
+}
+
+@media (max-width:1000px) {
+    .navbar-links-company {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .navbar-user {
+        position: absolute;
+        top: 65px;
+        right: -300px;
+        z-index: 3000;
+        background-color: white;
+        min-width: 250px;
+        padding: 1rem;
+        border-radius: .3rem;
+        outline: 1px solid red;
+        transition: .3s;
+    }
+    .navbar-user.active {
+        right: 0;
+        transition: .3s;
+    }
+    .navbar-links-ul li,
+    .navbar-user div p {
+        margin-block: 1rem;
+        cursor: pointer;
+    }
+}
+
+@media (min-width:1000px) {
+    .navbar-links-company-hamburger {
+        display: none;
+    }
+    .navbar-links-company {
+        flex-basis: 15%;
+    }
+    .navbar-container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .navbar-user {
+        flex-basis: 85%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .navbar-links-ul li {
+        display: inline-block;
+        margin-right: 1rem;
+    }
+    .navbar-user div {
+        display: flex;
+        align-items: center;
+    }
+    .navbar-user div p {
+        margin-right: 1rem;
+    }
+}
