@@ -1,0 +1,67 @@
+span {
+    color: var(--assent-color);
+}
+
+.companies {
+    background-color: var(--secondary-color);
+}
+
+.companies-container {
+    padding-block: 1rem;
+    width: 95%;
+    max-width: 1200px;
+    margin-inline: auto;
+}
+
+.companies-main {
+    padding-top: 3rem;
+}
+
+.companies-main-jobs-title p {
+    font-weight: 300;
+    font-size: .8rem;
+}
+
+.companies-main-jobs-title h1 {
+    padding-top: 1rem;
+    padding-bottom: 2rem;
+    font-size: 1.9rem;
+}
+
+.companies-main-jobs-list {
+    display: grid;
+    grid-gap: 1rem;
+}
+
+.companies-main-side-filter article {
+    margin-bottom: 2rem;
+}
+
+.companies-main-side-filter article input {
+    cursor: pointer;
+}
+
+.companies-main-side-filter h1 {
+    font-weight: 600;
+    font-size: 1rem;
+    padding-bottom: 1rem;
+}
+
+.companies-main-side-filter label {
+    padding-left: .5rem;
+}
+
+@media (max-width:1000px) {
+    .companies-main-side-filter {
+        display: none;
+    }
+}
+
+@media (min-width:1000px) {
+    .companies-main {
+        max-width: 1200px;
+        margin-inline: auto;
+        display: grid;
+        grid-template-columns: 250px 1fr;
+    }
+}
