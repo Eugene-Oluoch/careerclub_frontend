@@ -1,0 +1,78 @@
+.main-job {
+    margin-inline: auto;
+    background-color: var(--secondary-color);
+}
+
+.main-job-container {
+    padding-block: 2rem;
+    width: 95%;
+    max-width: 1200px;
+    margin-inline: auto;
+    display: grid;
+    grid-gap: 1rem;
+}
+
+.main-job-apply,
+.main-job-overview,
+.main-job-main {
+    background-color: white;
+    border-radius: .3rem;
+    padding: 2rem;
+}
+
+.main-job-overview h1 {
+    padding-bottom: 2rem;
+}
+
+.main-job-overview article {
+    display: flex;
+}
+
+.main-job-overview div {
+    margin-bottom: .5rem;
+    height: 4rem;
+    width: 4rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;
+    color: var(--assent-color);
+    background-color: var(--secondary-color);
+    border-radius: .5rem;
+}
+
+.main-job-overview article aside {
+    padding-left: .5rem;
+}
+
+.main-job-apply button {
+    width: 100%;
+    height: 54px;
+    background-color: var(--assent-color);
+    border: 1px solid var(--assent-color);
+    cursor: pointer;
+    color: white;
+    cursor: pointer;
+    border-radius: .3rem;
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+@media (min-width:1000px) {
+    .main-job-container {
+        grid-template-columns: 1fr 300px;
+        grid-template-rows: 120px 350px 1fr;
+    }
+    .main-job-apply {
+        grid-column: 2/3;
+        grid-row: 1/2;
+    }
+    .main-job-overview {
+        grid-column: 2/3;
+        grid-row: 2/3;
+    }
+    .main-job-main {
+        grid-column: 1/2;
+        grid-row: 1/4;
+    }
+}

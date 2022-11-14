@@ -4,6 +4,7 @@ import './css/Companies.css'
 //Components
 import Company from '../mini-components/company/Company'
 import FilterCompany from '../mini-components/filter-company/FilterCompany'
+import Pagenator from '../mini-components/pagenator/Pagenator'
 
 function Companies() {
     return (
@@ -57,6 +58,7 @@ function Companies() {
                         <Company />
                         <Company />
                     </div>
+                    <Pagenator />
                 </div>
             </article>
         </section>

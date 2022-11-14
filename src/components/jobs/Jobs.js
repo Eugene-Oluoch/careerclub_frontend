@@ -4,6 +4,7 @@ import './css/Jobs.css';
 //Components
 import Job from '../mini-components/job/Job'
 import Filter from '../mini-components/filter/Filter';
+import Pagenator from '../mini-components/pagenator/Pagenator';
 
 function Jobs() {
     return (
@@ -79,6 +80,7 @@ function Jobs() {
                         <Job />
                         <Job />
                     </div>
+                    <Pagenator />
                 </div>
             </article>
         </section>
