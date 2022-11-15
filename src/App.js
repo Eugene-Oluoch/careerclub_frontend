@@ -16,9 +16,12 @@ import PostJob from './components/post-a-job/PostJob'
 import Companies from './components/companies/Companies';
 import Profile from './components/profile/Profile';
 import Settings from './components/settings/Settings';
+import MainJob from './components/main-job/Mainjob'
 
 //Modules
 import { Routes,Route } from 'react-router-dom';
+import { ToastContainer } from 'react-toastify'
+import 'react-toastify/dist/ReactToastify.css'
 
 function App() {
 
@@ -32,6 +35,7 @@ function App() {
 
   return (
     <>
+    <ToastContainer />
     <Navbar open={handleClose} />
     <Routes>
       <Route path="*" element={<Fof />} />
@@ -40,6 +44,7 @@ function App() {
       <Route path="/profile" element={<Profile />} />
       <Route path="/settings" element={<Settings />} />
       <Route path="/companies" element={<Companies />} />
+      <Route path="/main-job" element={<MainJob />} />
       <Route path="/post-a-job" element={<PostJob />} />
     </Routes>
     <section className="app">

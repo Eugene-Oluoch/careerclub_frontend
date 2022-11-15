@@ -42,9 +42,9 @@
 }
 
 .profile-edit button {
-    min-width: 100px;
+    min-width: 70px;
     width: 100%;
-    height: 64px;
+    height: 50px;
     background-color: var(--secondary-fade-color);
     border: 1px solid var(--secondary-fade-color);
     border-radius: .3rem;
@@ -52,6 +52,52 @@
     font-size: 1rem;
     font-weight: 600;
     cursor: pointer;
+}
+
+.profile-work-list article,
+.profile-education-list article {
+    padding-block: .5rem;
+}
+
+.profile-work-list article button,
+.profile-education-list article button {
+    cursor: pointer;
+    padding-inline: .2rem;
+    font-size: .9rem;
+    border: none;
+    background-color: white;
+}
+
+.profile-work-list article div,
+.profile-education-list article div {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.profile-work-list article h1,
+.profile-education-list article h1 {
+    font-size: 1.5rem;
+}
+
+.profile-work-list article h2,
+.profile-education-list article h2 {
+    color: var(--text-fade-color);
+    font-size: .9rem;
+    padding-bottom: .5rem;
+}
+
+
+/* .profile-work-list article div button {
+    height: 50px;
+    padding-inline: 1rem;
+    border-radius: .3rem;
+    border: 1px solid var(--assent-color);
+    background-color: var(--assent-color);
+    color: white;
+} */
+
+.profile-work-list article div button:not(:last-child) {
+    margin-right: .3rem;
 }
 
 .profile-bio,
@@ -151,4 +197,149 @@
     .profile-main-details {
         padding-left: 1rem;
     }
+}
+
+.profile-bio-form,
+.profile-work-form,
+.profile-education-form,
+.profile-profile-form {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    position: fixed;
+}
+
+.profile-bio-form-overlay,
+.profile-work-form-overlay,
+.profile-education-form-overlay,
+.profile-profile-form-overlay {
+    background-image: linear-gradient(hsla(0, 0%, 0%, .6), hsla(0, 0%, 0%, .6));
+    height: 100vh;
+}
+
+.profile-bio-form form,
+.profile-work-form form,
+.profile-education-form form,
+.profile-profile-form form {
+    margin-top: 5rem;
+    border-radius: .3rem;
+    padding: 1rem;
+    width: 95%;
+    max-width: 500px;
+    margin-inline: auto;
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    background-color: var(--secondary-color);
+}
+
+.profile-work-form form label,
+.profile-education-form form label,
+.profile-profile-form form label {
+    display: block;
+    margin-block: .5rem;
+}
+
+.profile-work-form form input,
+.profile-education-form form input,
+.profile-profile-form form input {
+    margin-bottom: .3rem;
+    width: 100%;
+    height: 56px;
+    padding-left: .5rem;
+    font-size: 1rem;
+    font-weight: 600;
+    border-radius: .3rem;
+    border: 1px solid var(--input-border-color);
+    transition: .3s;
+}
+
+.profile-work-form form div select,
+.profile-education-form form div select {
+    width: 49%;
+    height: 56px;
+    font-size: 1rem;
+    font-weight: 600;
+    border-radius: .3rem;
+    border: 1px solid var(--input-border-color);
+    transition: .3s;
+}
+
+.profile-work-form form div select:not(:last-child),
+.profile-education-form form div select:not(:last-child) {
+    margin-right: .3rem;
+}
+
+.profile-education-form-level select {
+    width: 100% !important;
+    height: 56px;
+    font-size: 1rem;
+    font-weight: 600;
+    border-radius: .3rem;
+    border: 1px solid var(--input-border-color);
+    transition: .3s;
+}
+
+.profile-work-form form input:focus,
+.profile-work-form form select:focus,
+.profile-education-form form select:focus {
+    outline: none;
+    border: 1px solid var(--assent-color);
+    transition: .3s;
+}
+
+.profile-bio-form form h1,
+.profile-work-form form h1,
+.profile-education-form form h1,
+.profile-profile-form form h1 {
+    text-align: center;
+    font-size: 1.5rem;
+    padding-top: 1rem;
+    padding-bottom: 2rem;
+}
+
+.profile-bio-form form textarea {
+    display: block;
+    width: 100%;
+    resize: vertical;
+    border: 1px solid var(--input-border-color);
+    padding-left: .5rem;
+    padding-top: .5rem;
+    border-radius: .3rem;
+    transition: .3s;
+    font-size: 1rem;
+}
+
+.profile-bio-form form textarea:focus {
+    outline: none;
+    border: 1px solid var(--assent-color);
+    transition: .3s;
+}
+
+.profile-bio-form form button,
+.profile-work-form form button,
+.profile-education-form form button,
+.profile-profile-form form button {
+    margin-top: 1rem;
+    width: 100%;
+    height: 50px;
+    background-color: var(--assent-color);
+    border: 1px solid var(--assent-color);
+    border-radius: .3rem;
+    color: white;
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: 500;
+    transition: .3s;
+}
+
+.profile-bio-form form button:hover,
+.profile-work-form form button:hover,
+.profile-education-form form button:hover,
+.profile-profile-form form button:hover {
+    background-color: var(--assent-fade-color);
+    border: 1px soldi var(--assent-fade-color);
+    transition: .3s;
 }

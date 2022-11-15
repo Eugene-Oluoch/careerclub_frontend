@@ -1,0 +1,95 @@
+.post-a-job {
+    margin-inline: auto;
+}
+
+.post-a-job-title {
+    background-color: var(--secondary-fade-color);
+    height: 200px;
+    display: flex;
+    align-items: center;
+}
+
+.post-a-job-container {
+    padding-block: 3rem;
+    background-color: var(--secondary-color);
+}
+
+.post-a-job-title h1 {
+    font-size: 1.8rem;
+    width: 95%;
+    max-width: 1200px;
+    margin-inline: auto;
+}
+
+.post-a-job-form {
+    width: 95%;
+    max-width: 1200px;
+    margin-inline: auto;
+    background-color: white;
+    padding: 2rem;
+    border-radius: .3rem;
+}
+
+.post-a-job-form-div {
+    padding-bottom: 1rem;
+}
+
+.post-a-job-form aside button {
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: 600;
+    background-color: var(--assent-color);
+    border: 1px solid var(--assent-color);
+    color: white;
+    min-width: 150px;
+    border-radius: .3rem;
+    padding-inline: 1rem;
+    height: 50px;
+    transition: .3s;
+}
+
+.post-a-job-form aside button:hover {
+    background-color: var(--assent-fade-color);
+    border: 1px solid var(--assent-fade-color);
+    transition: .3s;
+}
+
+.post-a-job-form label {
+    display: block;
+    padding-bottom: 1rem;
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+.post-a-job-form div,
+.post-a-job-form article {
+    margin-bottom: .5rem;
+}
+
+.post-a-job-form-div input,
+.post-a-job-form-div select {
+    width: 100%;
+}
+
+.post-a-job-form-div input {
+    font-size: 1rem;
+    height: 50px;
+    padding-left: .3rem;
+    border-radius: .3rem;
+    border: 1px solid var(--input-border-color);
+    transition: .3s;
+}
+
+.post-a-job-form-div input:focus {
+    outline: none;
+    border: 1px solid var(--assent-color);
+    transition: .3s;
+}
+
+.post-a-job-form-div select {
+    padding-left: .3rem;
+    border: 1px solid var(--input-border-color);
+    min-height: 50px;
+    font-size: 1rem;
+    border-radius: .3rem;
+}

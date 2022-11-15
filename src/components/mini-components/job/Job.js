@@ -11,6 +11,9 @@ import { AiFillStar } from '@react-icons/all-files/ai/AiFillStar'
 //Css
 import './css/Job.css';
 
+//Modules
+import { Link } from 'react-router-dom'
+
 function Job() {
 
     //States
@@ -40,7 +43,7 @@ function Job() {
             </div>
         </div>
         <div className="job-buttons">
-            <button className="job-buttons-details">Job details</button>
+            <Link to="/main-job"><button className="job-buttons-details">Job details</button></Link>
             <button className="job-buttons-save" onClick={handleSave}>{save?<GrAdd />:<AiFillStar />}</button>
         </div>
         <div className="job-posted">
