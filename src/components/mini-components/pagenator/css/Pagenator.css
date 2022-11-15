@@ -1,0 +1,22 @@
+.pagenator {
+    margin-block: 1rem;
+}
+
+.pagenator article {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.pagenator article p {
+    margin-left: .3rem;
+    border-radius: .2rem;
+    background-color: var(--assent-color);
+    height: 2rem;
+    width: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    color: white;
+}

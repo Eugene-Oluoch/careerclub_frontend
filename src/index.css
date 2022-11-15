@@ -36,3 +36,8 @@ li {
 a {
     text-decoration: none;
 }
+
+.input-error {
+    border: 1px solid #FF0D0D !important;
+    transition: .3s;
+}
