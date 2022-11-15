@@ -1,3 +1,6 @@
+//States 
+import { useState } from 'react'
+
 //Css
 import './css/MainJob.css'
 
@@ -7,11 +10,36 @@ import { BsFillBriefcaseFill } from '@react-icons/all-files/bs/BsFillBriefcaseFi
 import { AiFillClockCircle } from '@react-icons/all-files/ai/AiFillClockCircle'
 
 function Mainjob() {
+
+    //States
+    let [apply,setApply] = useState(false)
+
+    //States Function
+    let handleApply = ()=>{
+        apply?setApply(false):setApply(true)
+    }
+
+
     return (
         <section className="main-job">
             <article className="main-job-container">
+                {apply?
+                <div className="main-job-form">
+                    <div className="main-job-form-overlay" onClick={handleApply}></div>
+                    <form className="main-job-form-form">
+                        <div className="main-job-form-form-title">
+                            <h1>Apply for job</h1>
+                        </div>
+                        <div>
+                            <label htmlFor="cv">Cv <span>*</span></label>
+                            <input type="file" name="cv" id="cv" placeholder='Supply your cv' />
+                        </div>
+                        <button type="submit">Apply</button>
+                    </form>
+                </div>
+                :""}
                 <div className="main-job-apply">
-                    <button>Apply for Job</button>
+                    <button onClick={handleApply}>Apply for Job</button>
                 </div>
                 <div className="main-job-overview">
                     <h1>Overview</h1>
