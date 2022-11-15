@@ -81,18 +81,18 @@
     }
     .navbar-user {
         position: absolute;
-        top: 65px;
-        right: -300px;
+        top: -300px;
+        right: 0;
         z-index: 3000;
         background-color: white;
         min-width: 250px;
         padding: 1rem;
         border-radius: .3rem;
-        outline: 1px solid red;
         transition: .3s;
+        box-shadow: 0 0 .2rem hsl(0, 0%, 90%);
     }
     .navbar-user.active {
-        right: 0;
+        top: 67px;
         transition: .3s;
     }
     .navbar-links-ul li,
@@ -130,5 +130,13 @@
     }
     .navbar-user div p {
         margin-right: 1rem;
+    }
+    .navbar-user div p {
+        display: flex;
+        align-items: center;
+    }
+    .navbar-user div p svg {
+        padding-right: .3rem;
+        font-size: 1.3rem;
     }
 }
