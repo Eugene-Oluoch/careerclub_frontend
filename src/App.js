@@ -17,6 +17,7 @@ import Companies from './components/companies/Companies';
 import Profile from './components/profile/Profile';
 import Settings from './components/settings/Settings';
 import MainJob from './components/main-job/Mainjob'
+import SavedJobs from './components/saved-jobs/SavedJobs';
 
 //Modules
 import { Routes,Route } from 'react-router-dom';
@@ -45,6 +46,7 @@ function App() {
       <Route path="/settings" element={<Settings />} />
       <Route path="/companies" element={<Companies />} />
       <Route path="/main-job" element={<MainJob />} />
+      <Route path="/saved-jobs" element={<SavedJobs />} />
       <Route path="/post-a-job" element={<PostJob />} />
     </Routes>
     <section className="app">
